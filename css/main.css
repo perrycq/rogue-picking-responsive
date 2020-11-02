@@ -206,7 +206,12 @@ nav ul li{
 /* Desktop */
 @media(min-width: 1200px){
 
-	body {
+	.top-section,
+	.bottom-section {
+		width: 100%;
+	}
+
+	footer {
 		width: 100%;
 	}
 
@@ -217,10 +222,26 @@ nav ul li{
 	}
 
 	header h1 {
-		width: 30%;
+		width: 25%;
 		display: flex;
 		justify-content: flex-start;
 		border-bottom: none;
+	}
+
+	.main-image {
+		width:100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.main-title {
+		width: 100%;
+	}
+
+	.menu {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
 	}
 
 	nav {
@@ -241,20 +262,21 @@ nav ul li{
 		border-top: 1px solid #eee;
 		display: flex;
 		justify-content: center;
+	}
+
+	.section-one h4 {
+		display:flex;
+		justify-content: flex-start;
+	}
+
+	.section-two {
 		flex-grow: 1;
 	}
-
-	/* .section-one h4 {
-
-	}
-
-	.section-three p address {
+	.section-three p {
 		display: flex;
-		justify-content: flex-start;
-	} */
-
-	.top-section,
-	.bottom-section {
-		width: 100%;
+		align-items: flex-start;
 	}
+
+	
+
 }
