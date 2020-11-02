@@ -72,7 +72,7 @@ header nav ul {
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 14px;
+	font-size: .875rem;
 	padding: 10px;
 	display: flex;
 	flex-flow: row wrap;
@@ -113,7 +113,7 @@ header nav ul li a{
 .main-title p {
 	width: 90%;
 	padding: 0;
-	font-size: 16px;
+	font-size: 1rem;
 	line-height: 25px;
 }
 
@@ -153,12 +153,12 @@ header nav ul li a{
 
 .reviews {
 	color: #333;
-	font-size: 16px;
+	font-size: 1rem;
 	line-height: 21px;
 }
 
 .address {
-	font-size: 16px;
+	font-size: 1rem;
 	line-height: 24px;
 }
 
@@ -175,13 +175,28 @@ footer span {
 	font-family: 'Galada', cursive;
 	text-transform: lowercase;
 	color: #77a466;
-	font-size: 14px;
+	font-size: .875rem;
 }
 
 /* Tablet */
-@media(min-width: 910px){
+@media(min-width: 768px){
+/* original min-width set to 910px as it looked the best without being squished */
+/* TEST SECTION */
 
-nav ul{
+.bottom-section {
+	width:95%;
+}
+
+.section-one,
+.section-two,
+.section-three {
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	flex-grow: 1;
+
+/* Current Section */
+/* nav ul{
 	width: 33.33333%;
 }
 
@@ -194,11 +209,10 @@ nav ul li{
 .section-two,
 .section-three {
 	width: 30%;
-	border-top: 1px solid #eee;
 	display: flex;
 	justify-content: center;
 	flex-grow: 1;
-}
+} */
 
 }
 
