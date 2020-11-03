@@ -12,6 +12,11 @@ body {
 	flex-direction: column;
 }
 
+html {
+	display: flex;
+	justify-content: center;
+}
+
 h1,
 h2,
 h3,
@@ -22,6 +27,7 @@ h4 {
 }
 h1 {
 	font-size: 1.875rem;
+	text-align: center;
 }
 h2 {
     font-size: 1.5rem;
@@ -53,8 +59,6 @@ header h1 {
 	margin: 0;
 	padding: 38px 0;
 	width:100%;
-	display: flex;
-	justify-content: center;
 	border-bottom: 5px solid #77a466;
 }
 
@@ -70,12 +74,12 @@ header nav ul {
 	padding: 0;
 }
 header nav ul li {
+	text-align: center;
+	list-style-type:none;
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: .875rem;
 	padding: 10px;
-	display: flex;
-	flex-flow: row wrap;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -86,6 +90,7 @@ header nav ul li a{
 .top-section,
 .bottom-section {
 	margin: 0 auto;
+	width: 100%;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
@@ -122,8 +127,6 @@ header nav ul li a{
 .section-three {
 	width: 100%;
 	border-top: 1px solid #eee;
-	display: flex;
-	flex-flow: wrap;
 }
 
 .section-one h4 {
@@ -181,7 +184,6 @@ footer span {
 /* Tablet */
 @media(min-width: 768px){
 /* original min-width set to 910px as it looked the best without being squished */
-/* TEST SECTION */
 
 .bottom-section {
 	width:95%;
@@ -193,26 +195,19 @@ footer span {
 	width: 30%;
 	display: flex;
 	justify-content: center;
-	flex-grow: 1;
+	/* flex-grow: 1; */
+	}
 
-/* Current Section */
-/* nav ul{
-	width: 33.33333%;
+/* Switched section 2 flex grow for better look for review */
+.section-two {
+	flex-grow:1;
 }
 
-nav ul li{
-	display:flex;
-	justify-content: space-between;
-}
-
-.section-one,
-.section-two,
-.section-three {
-	width: 30%;
+.address {
 	display: flex;
-	justify-content: center;
-	flex-grow: 1;
-} */
+	justify-content: flex-start;
+	align-items: flex-start;
+}
 
 }
 
